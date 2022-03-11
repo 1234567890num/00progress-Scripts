@@ -1,5 +1,8 @@
 1000 HB_START:
 	World Map: 00 01
+	Spawn ID Change:
+		Room 00: -1 -1 01
+		Room 09: 01 -1 -1
 	Raise Progress:
 		105C HB_SCENARIO_1_OPEN
 	[END]
@@ -10,6 +13,7 @@
 		Room 00: -1 -1 00
 		Room 0A: -1 -1 01
 	Raise Progress:
+		102D HB_START_wi_dc
 		105D HB_SCENARIO_1_START
 	[END]
 
@@ -50,12 +54,9 @@
 	[SKIP]
 
 1009 HB_START1_2:
-	Remove Warp: World 04 Room 06
-	Remove Warp: World 04 Room 03
-	Remove Warp: World 04 Room 0D
-	Remove Warp: World 04 Room 05
 	World Map: 00 04
 	Spawn ID Change:
+		Room 08: 01 01 -1
 		Room 0A: 02 -1 02
 	Raise Progress:
 		1074 HB_SCENARIO_4_OPEN
@@ -143,13 +144,13 @@
 	Block: World 04 Room 0B
 	Spawn ID Change:
 		Room 05: 05 -1 07
+	Raise Progress:
+		1018 HB_tr_117_END
 	[END]
 
 1017 HB_304_END:
 	Spawn ID Change:
 		Room 05: -1 -1 16
-	Raise Progress:
-		4424 TR_hb_304_END
 	[END]
 
 1018 HB_tr_117_END:
@@ -174,8 +175,6 @@
 101C HB_404_END:
 	Spawn ID Change:
 		Room 0B: -1 -1 00
-	Raise Progress:
-		443A TR_HB05_HIDDEN_OFF
 	[END]
 
 101D:
@@ -284,17 +283,9 @@
 	Raise Progress:
 		08F7 TT_BATTLE2_OPEN
 		1076 HB_SCENARIO_4_END
-		1418 BB_START2
-		2013 MU_START2
-		3428 WI_START2
-		4002 CA_START2
 	[END]
 
 102C HB_START2:
-	Remove Warp: World 04 Room 06
-	Remove Warp: World 04 Room 03
-	Remove Warp: World 04 Room 0D
-	Remove Warp: World 04 Room 05
 	World Map: 00 05
 	Spawn ID Change:
 		Room 03: 00 00 00
@@ -305,7 +296,7 @@
 		Room 0C: 00 00 00
 		Room 05: 00 00 00
 		Room 12: 03 00 00
-		Room 0D: 00 00 00
+		Room 0D: -1 00 00
 		Room 06: -1 00 -1
 		Room 00: 00 00 00
 		Room 13: 00 00 00
@@ -428,8 +419,6 @@
 		Room 0A: -1 -1 14
 	Raise Progress:
 		105E HB_SCENARIO_1_END
-		1400 BB_START
-		2000 MU_START
 		3C01 WM_HB1_CLEAR
 	[END]
 
@@ -440,6 +429,8 @@
 	[SKIP]
 
 1040 HB_hb04_ms403:
+	Spawn ID Change:
+		Room 04: -1 -1 02
 	Raise Progress:
 		1083 HB_NEW_MICKEY_START
 	[END]
@@ -466,7 +457,7 @@
 	Spawn ID Change:
 		Room 05: 03 -1 -1
 	Raise Progress:
-		4400 TR_START
+		1013 HB_tr_107_END
 	[END]
 
 1046 HB_HB_EVENT_403:
@@ -487,6 +478,7 @@
 104A HB_hb16_ms404d:
 	Spawn ID Change:
 		Room 03: -1 -1 01
+		Room 04: -1 -1 00
 	[END]
 
 104B HB_417_END:
@@ -515,8 +507,6 @@
 	Spawn ID Change:
 		Room 05: -1 -1 00
 		Room 0D: -1 -1 00
-	Raise Progress:
-		4428 TR_hb_501_END
 	[END]
 
 104F:
@@ -530,7 +520,7 @@
 
 1052 HB_503_END:
 	Raise Progress:
-		442A TR_503_END
+		1053 HB_TR_tr09_ms205
 	[END]
 
 1053 HB_TR_tr09_ms205:
@@ -572,38 +562,13 @@
 	[END]
 
 105B HB_INIT:
-	Remove Warp: World 04 Room 06
-	Remove Warp: World 04 Room 03
-	Remove Warp: World 04 Room 0D
-	Remove Warp: World 04 Room 05
 	BGM Set: 1
 	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 1A: 00 00 00
-		Room 0F: 00 00 00
-		Room 0B: 00 00 00
-		Room 15: 00 00 00
-		Room 04: 00 00 00
-		Room 11: 00 00 00
-		Room 0C: 00 00 00
-		Room 16: 00 00 00
-		Room 05: 00 00 00
-		Room 12: 00 00 00
-		Room 0D: 01 -1 00
-		Room 17: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 01
-		Room 13: 00 00 00
-		Room 0E: 00 00 00
-		Room 01: 00 00 00
-		Room 18: 00 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 10: 00 00 00
-		Room 02: 00 00 00
-		Room 19: 00 00 00
-		Room 0A: 01 00 00
-		Room 09: 01 01 00
+		Room 1A: 01 -1 03
+		Room 0D: 01 -1 -1
+		Room 00: -1 -1 01
+		Room 0A: 01 -1 -1
+		Room 09: 01 01 -1
 	[END]
 
 105C HB_SCENARIO_1_OPEN:
@@ -715,7 +680,7 @@
 	Spawn ID Change:
 		Room 05: -1 -1 0A
 	Raise Progress:
-		4414 TR_START2
+		104D HB_TR_202_END
 	[END]
 
 106F HB_520_END:
@@ -760,9 +725,7 @@
 	[END]
 
 1077 HB_SCENARIO_5_END:
-	Raise Progress:
-		108B HB_hb_event_507
-	[END]
+	[SKIP]
 
 1078 HB_109_END:
 	Spawn ID Change:
@@ -857,9 +820,7 @@
 	[SKIP]
 
 108A HB_hb_event_502:
-	Raise Progress:
-		4429 TR_hb_502_END
-	[END]
+	[SKIP]
 
 108B HB_hb_event_507:
 	Unblock: World 04 Room 06
@@ -871,7 +832,7 @@
 		Room 0B: -1 0B -1
 		Room 04: -1 01 -1
 		Room 0C: -1 -1 16
-		Room 12: -1 0B -1
+		Room 12: 0D 0B -1
 		Room 0D: -1 -1 10
 		Room 13: -1 0B -1
 		Room 01: -1 00 16
@@ -880,7 +841,7 @@
 		Room 0A: -1 -1 06
 		Room 09: -1 0B -1
 	Raise Progress:
-		1077 HB_SCENARIO_5_END
+		10A1 HB_ROXAS_KINOKO_ON
 	[END]
 
 108C HB_RTN_ON:
@@ -956,17 +917,17 @@
 
 109B HB_FM_COM_VEX_END:
 	Raise Progress:
-		1C50 AL_FM_COM_OBJ_OFF
+		383B NM_FM_COM_OBJ_OFF_GOA
 	[END]
 
 109C HB_FM_COM_LEX_END:
 	Raise Progress:
-		08F4 TT_FM_COM_OBJ_OFF
+		1C50 AL_FM_COM_OBJ_OFF
 	[END]
 
 109D HB_FM_COM_LAR_END:
 	Raise Progress:
-		4063 CA_FM_COM_OBJ_OFF
+		4439 TR_FM_COM_OBJ_OFF_GOA
 	[END]
 
 109E HB_FM_COM_ZEX_END:
@@ -976,7 +937,7 @@
 
 109F HB_FM_COM_MAR_END:
 	Raise Progress:
-		1424 BB_FM_COM_OBJ_OFF
+		3020 DC_FM_COM_OBJ_OFF_GOA
 	[END]
 
 10A0:
@@ -1078,24 +1039,41 @@
 10B8 HB_FM_LAR_RE_CLEAR:
 	[SKIP]
 
-10B9:
-	[SKIP]
+10B9 HB_WORLDS_CHECK_GOA:
+	Lower Progress:
+		10B9 HB_WORLDS_CHECK_GOA
+	[END]
 
 10BA HB_FM_13TSUURO_OUT:
 	Spawn ID Change:
-		Room 1A: 01 00 03
 		Room 19: -1 04 00
 	[END]
 
 10BB HB_FM_713_END:
 	Spawn ID Change:
-		Room 1A: 02 -1 02
-		Room 12: 01 -1 -1
+		Room 1A: 00 -1 02
 	[END]
 
 10BC HB_FM_714_END:
 	Spawn ID Change:
 		Room 1A: -1 -1 01
+	Raise Progress:
+		4842 EH_FINAL_CHANCE_START
+		08DB TT_ROXAS_START
+		08D0 TT_ROXAS_END
+		08D1 TT_SORA_OLD_END
+		1000 HB_START
+		1400 BB_START
+		1800 HE_START
+		1C00 AL_START
+		2000 MU_START
+		2800 LK_START
+		2C00 LM_START
+		3000 DC_DC_OPEN_L
+		3800 NM_START
+		4000 CA_START
+		4400 TR_START
+		4800 EH_START
 	[END]
 
 10BD HB_ROXAS_KINOKO_CLEAR:

@@ -4,7 +4,6 @@
 	Raise Progress:
 		0814 TT_INIT
 		0815 TT_SCENARIO_1_OPEN
-		0C00 DI_START
 		105B HB_INIT
 		140B BB_INIT
 		181D HE_INIT
@@ -22,34 +21,74 @@
 	[END]
 
 0801 TT_XEM_PATH_GOA:
-	[SKIP]
+	Spawn ID Change:
+		Room 21: 01 02 -1
+	Lower Progress:
+		0801 TT_XEM_PATH_GOA
+	[END]
 
 0802 TT_XIG_PATH_GOA:
-	[SKIP]
+	Spawn ID Change:
+		Room 21: 01 03 -1
+	Lower Progress:
+		0802 TT_XIG_PATH_GOA
+	[END]
 
 0803 TT_XAL_PATH_GOA:
-	[SKIP]
+	Spawn ID Change:
+		Room 21: 01 04 -1
+	Lower Progress:
+		0803 TT_XAL_PATH_GOA
+	[END]
 
 0804 TT_SAI_PATH_GOA:
-	[SKIP]
+	Spawn ID Change:
+		Room 21: 01 05 -1
+	Lower Progress:
+		0804 TT_SAI_PATH_GOA
+	[END]
 
 0805 TT_AXE_PATH_GOA:
-	[SKIP]
+	Spawn ID Change:
+		Room 21: 01 06 -1
+	Lower Progress:
+		0805 TT_AXE_PATH_GOA
+	[END]
 
 0806 TT_DEM_PATH_GOA:
-	[SKIP]
+	Spawn ID Change:
+		Room 21: 01 07 -1
+	Lower Progress:
+		0806 TT_DEM_PATH_GOA
+	[END]
 
 0807 TT_LUX_PATH_GOA:
-	[SKIP]
+	Spawn ID Change:
+		Room 21: 01 08 -1
+	Lower Progress:
+		0807 TT_LUX_PATH_GOA
+	[END]
 
 0808 TT_ROX_PATH_GOA:
-	[SKIP]
+	Spawn ID Change:
+		Room 21: 00 09 -1
+	Lower Progress:
+		0808 TT_ROX_PATH_GOA
+	[END]
 
 0809 TT_PROMISE_PATH_GOA:
-	[SKIP]
+	Spawn ID Change:
+		Room 21: 02 0A -1
+	Lower Progress:
+		0809 TT_PROMISE_PATH_GOA
+	[END]
 
 080A TT_THORN_PATH_GOA:
-	[SKIP]
+	Spawn ID Change:
+		Room 21: 00 01 -1
+	Lower Progress:
+		080A TT_THORN_PATH_GOA
+	[END]
 
 080B:
 	[SKIP]
@@ -81,13 +120,6 @@
 	[SKIP]
 
 0814 TT_INIT:
-	Remove Warp: World 02 Room 1B
-	Remove Warp: World 02 Room 1A
-	Remove Warp: World 02 Room 15
-	Remove Warp: World 02 Room 0B
-	Remove Warp: World 02 Room 02
-	Remove Warp: World 02 Room 09
-	Remove Warp: World 02 Room 12
 	BGM Set: 1
 	Spawn ID Change:
 		Room 24: 00 00 00
@@ -125,12 +157,21 @@
 		Room 0E: 00 00 00
 		Room 25: 00 00 00
 		Room 07: 00 00 00
-		Room 20: 00 00 00
+		Room 20: 01 00 01
 		Room 02: 00 00 00
 		Room 12: 00 00 00
 		Room 1B: 00 00 00
 		Room 00: 00 00 00
 		Room 16: 00 00 00
+	Raise Menu:
+		70 CAMP_CMD_OPEN_ITEM
+		71 CAMP_CMD_OPEN_PARTY
+		72 CAMP_CMD_OPEN_CUSTOMIZE
+		73 CAMP_CMD_OPEN_JIMINYMEMO
+		34 SHOP_HE_HYBRID
+		36 SHOP_CA_HYBRID
+		3F SHOP_LK_HYBRID
+		42 SHOP_EH_HYBRID
 	[END]
 
 0815 TT_SCENARIO_1_OPEN:
@@ -142,7 +183,7 @@
 	BGM Set: 1
 	World Map: 01 01
 	Raise Progress:
-		0817 TT_SCENARIO_1_START
+		08DB TT_ROXAS_START
 	[END]
 
 0817 TT_SCENARIO_1_START:
@@ -336,6 +377,8 @@
 0839 TT_211_END_L:
 	Unblock: World 02 Room 04
 	World Map: 02 02
+	Spawn ID Change:
+		Room 0E: 03 -1 -1
 	Raise Progress:
 		083A TT_SCENARIO_2_END
 	[END]
@@ -380,10 +423,9 @@
 		Room 06: -1 -1 02
 		Room 04: -1 -1 15
 		Room 09: -1 -1 15
-		Room 03: -1 -1 15
+		Room 03: 01 -1 15
 		Room 08: -1 -1 15
 		Room 07: -1 -1 15
-		Room 02: -1 -1 16
 	[END]
 
 0842 TT_305_END:
@@ -421,14 +463,12 @@
 
 0847 TT_310_END_L:
 	Spawn ID Change:
-		Room 20: -1 -1 01
+		Room 20: -1 -1 03
 	[END]
 
 0848 TT_311_END:
 	Spawn ID Change:
 		Room 20: -1 -1 00
-	Raise Menu:
-		77 CAMP_ROXAS_WEAPON_HIDE
 	[END]
 
 0849 TT_312_END_L:
@@ -616,6 +656,7 @@
 		Room 08: -1 -1 0F
 		Room 07: 01 -1 13
 		Room 02: -1 -1 0C
+		Room 0E: 01 -1 -1
 	Raise Progress:
 		086A TT_SCENARIO_5_START
 	[END]
@@ -768,6 +809,7 @@
 		Room 03: 03 -1 03
 		Room 08: 03 -1 00
 		Room 07: 03 -1 00
+		Room 0D: 01 -1 -1
 	[END]
 
 0881 TT_603_END:
@@ -859,10 +901,8 @@
 	BGM Set: 3
 	Spawn ID Change:
 		Room 11: -1 00 -1
-		Room 0F: -1 00 -1
-		Room 10: -1 00 -1
 		Room 13: 01 -1 02
-		Room 0E: -1 00 -1
+		Room 09: 02 -1 13
 	[END]
 
 088E TT_615_OUT:
@@ -883,34 +923,17 @@
 	BGM Set: 3
 	Spawn ID Change:
 		Room 17: -1 -1 02
-		Room 16: -1 -1 00
 	[END]
 
 0891 TT_618_END:
 	Unblock: World 02 Room 08
 	Unblock: World 02 Room 0E
-	BGM Set: 3
+	BGM Set: 1
 	World Map: 02 06
 	Spawn ID Change:
-		Room 0D: 00 00 -1
-		Room 06: -1 16 -1
-		Room 11: 00 00 -1
-		Room 0C: 00 -1 -1
-		Room 0F: 00 00 -1
-		Room 04: -1 00 -1
-		Room 0A: 00 16 -1
-		Room 10: 00 00 -1
-		Room 13: 00 00 -1
-		Room 03: -1 00 -1
-		Room 17: 00 -1 00
-		Room 08: -1 00 -1
-		Room 0E: 00 00 -1
-		Room 07: -1 16 -1
-		Room 12: 00 -1 -1
-		Room 16: 00 -1 -1
+		Room 17: 0D -1 00
 	Raise Progress:
 		0892 TT_SCENARIO_6_END
-		08D0 TT_ROXAS_END
 	[END]
 
 0892 TT_SCENARIO_6_END:
@@ -919,13 +942,6 @@
 	[END]
 
 0893 TT_701_END_L:
-	Remove Warp: World 02 Room 1B
-	Remove Warp: World 02 Room 1A
-	Remove Warp: World 02 Room 15
-	Remove Warp: World 02 Room 0B
-	Remove Warp: World 02 Room 02
-	Remove Warp: World 02 Room 09
-	Remove Warp: World 02 Room 12
 	BGM Set: 2
 	World Map: 00 07
 	Raise Progress:
@@ -946,12 +962,12 @@
 	Spawn ID Change:
 		Room 24: 04 -1 -1
 		Room 0D: -1 -1 12
-		Room 06: 04 -1 12
+		Room 06: 04 16 12
 		Room 15: 01 -1 -1
 		Room 0C: -1 -1 12
 		Room 0B: 04 -1 12
 		Room 04: 04 -1 12
-		Room 0A: -1 -1 12
+		Room 0A: -1 16 12
 		Room 09: 04 -1 12
 		Room 03: 04 -1 05
 		Room 08: 04 -1 12
@@ -1118,17 +1134,12 @@
 	BGM Set: 2
 	Spawn ID Change:
 		Room 24: 00 -1 -1
-		Room 1F: -1 00 -1
-		Room 06: 00 -1 -1
+		Room 06: 07 -1 -1
 		Room 1A: 00 -1 -1
 		Room 15: 00 -1 -1
-		Room 1E: -1 00 -1
-		Room 19: 00 00 -1
-		Room 27: -1 00 -1
+		Room 19: 00 -1 -1
 		Room 0B: 00 -1 -1
-		Room 1D: -1 00 -1
 		Room 04: 07 -1 -1
-		Room 26: -1 00 -1
 		Room 09: 00 -1 -1
 		Room 1C: -1 -1 00
 		Room 03: 00 -1 -1
@@ -1145,9 +1156,10 @@
 	Spawn ID Change:
 		Room 1C: 01 -1 -1
 		Room 0E: 04 -1 -1
+		Room 15: 07 -1 00
+		Room 13: 02 00 -1
 	Raise Progress:
 		08AD TT_SCENARIO_8_END
-		1000 HB_START
 	[END]
 
 08AD TT_SCENARIO_8_END:
@@ -1157,6 +1169,8 @@
 
 08AE TT_901_END_L:
 	BGM Set: 2
+	Raise Progress:
+		08EC TT_START_01
 	[END]
 
 08AF TT_SCENARIO_9_OPEN:
@@ -1198,7 +1212,7 @@
 	Block: World 02 Room 25
 	BGM Set: 2
 	Spawn ID Change:
-		Room 04: -1 02 02
+		Room 04: -1 -1 02
 		Room 08: -1 -1 04
 	[END]
 
@@ -1230,7 +1244,6 @@
 		Room 0E: -1 02 -1
 	Raise Progress:
 		08B9 TT_SCENARIO_9_END
-		1009 HB_START1_2
 	[END]
 
 08B9 TT_SCENARIO_9_END:
@@ -1250,6 +1263,7 @@
 		Room 25: -1 07 00
 		Room 02: -1 -1 00
 	Raise Progress:
+		08ED TT_START_02
 		08EE TT_SCENARIO_10_START
 	[END]
 
@@ -1367,7 +1381,7 @@
 		Room 1F: -1 07 -1
 		Room 06: 00 16 10
 		Room 11: -1 07 -1
-		Room 28: -1 -1 00
+		Room 28: 0D -1 00
 		Room 15: 07 -1 10
 		Room 0C: 00 -1 -1
 		Room 1E: -1 07 -1
@@ -1388,9 +1402,11 @@
 		Room 07: 00 16 10
 		Room 02: -1 -1 12
 		Room 16: -1 07 -1
+	Lower Progress:
+		08F2 TT_TT21_REAL
 	Raise Progress:
 		08CB TT_SCENARIO_10_END
-		4800 EH_START
+		08F2 TT_TT21_REAL
 	[END]
 
 08CB TT_SCENARIO_10_END:
@@ -1531,17 +1547,10 @@
 	[END]
 
 08EC TT_START_01:
-	Remove Warp: World 02 Room 1B
-	Remove Warp: World 02 Room 1A
-	Remove Warp: World 02 Room 15
-	Remove Warp: World 02 Room 0B
-	Remove Warp: World 02 Room 02
-	Remove Warp: World 02 Room 09
-	Remove Warp: World 02 Room 12
 	World Map: 00 09
 	Spawn ID Change:
 		Room 0D: -1 -1 00
-		Room 06: -1 -1 10
+		Room 06: 00 -1 10
 		Room 0C: -1 -1 10
 		Room 0B: -1 -1 10
 		Room 04: -1 -1 01
@@ -1556,13 +1565,6 @@
 	[END]
 
 08ED TT_START_02:
-	Remove Warp: World 02 Room 1B
-	Remove Warp: World 02 Room 1A
-	Remove Warp: World 02 Room 15
-	Remove Warp: World 02 Room 0B
-	Remove Warp: World 02 Room 02
-	Remove Warp: World 02 Room 09
-	Remove Warp: World 02 Room 12
 	BGM Set: 2
 	World Map: 00 0A
 	Spawn ID Change:

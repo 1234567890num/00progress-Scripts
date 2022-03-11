@@ -1,5 +1,7 @@
 1C00 AL_START:
 	World Map: 00 01
+	Spawn ID Change:
+		Room 00: -1 -1 01
 	Raise Progress:
 		1C1A AL_SCENARIO_1_OPEN
 	[END]
@@ -22,6 +24,8 @@
 1C04 AL_CARPET_02_END_L:
 	Spawn ID Change:
 		Room 0E: 02 0B 0D
+	Raise Progress:
+		1C05 AL_CARPET_03_JUMP
 	[END]
 
 1C05 AL_CARPET_03_JUMP:
@@ -104,21 +108,14 @@
 		Room 03: -1 00 15
 		Room 06: -1 -1 13
 		Room 00: 03 -1 -1
-		Room 02: 01 -1 15
+		Room 02: 01 02 15
 		Room 0A: -1 02 -1
 	Raise Progress:
 		1C1C AL_SCENARIO_1_END
-		2800 LK_START
 		3C09 WM_AL1_CLEAR
 	[END]
 
 1C15 AL_START2:
-	Remove Warp: World 07 Room 09
-	Remove Warp: World 07 Room 0F
-	Remove Warp: World 07 Room 0B
-	Remove Warp: World 07 Room 06
-	Remove Warp: World 07 Room 0D
-	Remove Warp: World 07 Room 02
 	World Map: 00 02
 	Spawn ID Change:
 		Room 03: 00 00 00
@@ -142,7 +139,6 @@
 
 1C16 AL_201_END:
 	Block: World 07 Room 0B
-	Add Warp: World 07 Room 02
 	World Map: 01 02
 	Spawn ID Change:
 		Room 0F: -1 -1 0A
@@ -158,28 +154,8 @@
 	[SKIP]
 
 1C19 AL_INIT:
-	Remove Warp: World 07 Room 09
-	Remove Warp: World 07 Room 0F
-	Remove Warp: World 07 Room 0B
-	Remove Warp: World 07 Room 06
-	Remove Warp: World 07 Room 0D
-	Remove Warp: World 07 Room 02
 	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 0F: 00 00 00
-		Room 0B: 00 00 00
-		Room 04: 00 00 00
-		Room 0C: 00 00 00
-		Room 05: 00 00 00
-		Room 0D: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 01
-		Room 0E: 00 00 00
-		Room 01: 00 00 00
-		Room 07: 00 00 00
-		Room 02: 00 00 00
-		Room 0A: 00 00 00
-		Room 09: 00 00 00
+		Room 00: -1 -1 01
 	[END]
 
 1C1A AL_SCENARIO_1_OPEN:
@@ -227,7 +203,7 @@
 	Spawn ID Change:
 		Room 06: 01 -1 00
 		Room 02: -1 -1 03
-		Room 0A: -1 01 00
+		Room 0A: -1 01 02
 	[END]
 
 1C23 AL_101_END:
@@ -320,6 +296,7 @@
 		Room 01: -1 02 -1
 		Room 07: -1 02 -1
 		Room 02: 02 -1 13
+		Room 0A: -1 -1 00
 	[END]
 
 1C30 AL_113_END:
@@ -338,7 +315,7 @@
 	Block: World 07 Room 07
 	Spawn ID Change:
 		Room 03: -1 -1 16
-		Room 0F: 01 01 16
+		Room 0F: 01 -1 16
 		Room 06: 02 -1 0A
 		Room 00: 01 0A -1
 		Room 01: -1 0A -1
@@ -400,7 +377,7 @@
 	World Map: 02 02
 	Spawn ID Change:
 		Room 03: -1 00 14
-		Room 0F: 03 -1 15
+		Room 0F: 03 01 15
 		Room 06: -1 -1 12
 		Room 00: 04 0A 00
 		Room 01: -1 0A -1
@@ -480,7 +457,7 @@
 
 1C50 AL_FM_COM_OBJ_OFF:
 	Spawn ID Change:
-		Room 0F: -1 00 -1
+		Room 0F: -1 02 15
 	[END]
 
 1C51 AL_FM_KINOKO_LEX_PLAYED:

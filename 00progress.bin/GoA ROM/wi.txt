@@ -223,17 +223,7 @@
 	[END]
 
 3424 WI_INIT:
-	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 04: 00 00 00
-		Room 05: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 00
-		Room 01: 00 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 02: 00 00 00
-	[END]
+	[SKIP]
 
 3425 WI_SCENARIO_1_OPEN:
 	Raise Progress:

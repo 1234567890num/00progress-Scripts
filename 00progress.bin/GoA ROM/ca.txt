@@ -1,20 +1,22 @@
 4000 CA_START:
 	World Map: 00 01
+	Spawn ID Change:
+		Room 00: -1 -1 01
+		Room 09: 00 -1 -1
 	Raise Progress:
 		404B CA_SCENARIO_1_OPEN
 		405E CA_NO_JACK01_START
+	Lower Menu:
+		39 CA_NAVI_BP_OFF
+		3A CA_NAVI_08_ON
+		3B CA_NAVI_14_ON
+		78 CA_NAVI_ICON_BP
 	[END]
 
 4001:
 	[SKIP]
 
 4002 CA_START2:
-	Add Warp: World 10 Room 04
-	Remove Warp: World 10 Room 0B
-	Remove Warp: World 10 Room 00
-	Remove Warp: World 10 Room 06
-	Add Warp: World 10 Room 08
-	Remove Warp: World 10 Room 10
 	World Map: 00 02
 	Spawn ID Change:
 		Room 14: 00 00 00
@@ -50,6 +52,8 @@
 		4049 CA_ca16_on
 	Raise Progress:
 		404E CA_SCENARIO_2_OPEN
+	Raise Menu:
+		78 CA_NAVI_ICON_BP
 	[END]
 
 4003:
@@ -226,8 +230,8 @@
 		Room 0C: -1 01 -1
 		Room 16: -1 03 -1
 		Room 0D: -1 01 -1
-		Room 08: -1 01 05
-		Room 10: 00 01 01
+		Room 08: -1 -1 05
+		Room 10: 00 -1 01
 		Room 0A: -1 -1 02
 		Room 09: -1 02 -1
 	Raise Menu:
@@ -250,8 +254,6 @@
 	[END]
 
 401E CA_125_END:
-	Add Warp: World 10 Room 04
-	Add Warp: World 10 Room 08
 	World Map: 02 01
 	Spawn ID Change:
 		Room 03: -1 -1 00
@@ -273,8 +275,6 @@
 		4043 CA_ca14_on
 		4049 CA_ca16_on
 	Raise Progress:
-		1C00 AL_START
-		3800 NM_START
 		3C07 WM_CA1_CLEAR
 		404D CA_SCENARIO_1_END
 		405B CA_JACK01_END
@@ -430,7 +430,7 @@
 		Room 0E: -1 0A -1
 		Room 01: 02 0B -1
 		Room 02: 01 0B -1
-		Room 0A: -1 0A -1
+		Room 0A: 0D 0A -1
 		Room 09: -1 0A -1
 	Raise Progress:
 		3C0D WM_CA2_CLEAR
@@ -580,39 +580,10 @@
 	[END]
 
 404A CA_INIT:
-	Remove Warp: World 10 Room 04
-	Remove Warp: World 10 Room 0B
-	Remove Warp: World 10 Room 00
-	Remove Warp: World 10 Room 06
-	Remove Warp: World 10 Room 08
-	Remove Warp: World 10 Room 10
 	Spawn ID Change:
-		Room 14: 00 00 00
-		Room 03: 00 00 00
-		Room 0F: 00 00 00
-		Room 0B: 00 00 00
-		Room 15: 00 00 00
-		Room 04: 00 00 00
-		Room 11: 00 00 00
-		Room 0C: 00 00 00
-		Room 16: 00 00 00
-		Room 05: 00 00 00
-		Room 12: 00 00 00
-		Room 0D: 00 00 00
-		Room 17: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 01
-		Room 13: 00 00 00
-		Room 0E: 01 00 00
-		Room 01: 00 00 00
-		Room 18: 00 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 10: 00 00 00
-		Room 02: 00 00 00
-		Room 19: 00 00 00
-		Room 0A: 00 00 00
-		Room 09: 00 00 00
+		Room 00: -1 -1 01
+		Room 0E: 01 -1 -1
+		Room 09: 00 -1 -1
 	[END]
 
 404B CA_SCENARIO_1_OPEN:
@@ -704,10 +675,7 @@
 	[END]
 
 4063 CA_FM_COM_OBJ_OFF:
-	Spawn ID Change:
-		Room 08: -1 00 -1
-		Room 10: -1 00 -1
-	[END]
+	[SKIP]
 
 4064 CA_FM_KINOKO_LUX_PLAYED:
 	[SKIP]

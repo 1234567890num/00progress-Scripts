@@ -1,5 +1,12 @@
 1800 HE_START:
 	World Map: 00 01
+	Spawn ID Change:
+		Room 03: 01 16 -1
+		Room 11: -1 16 -1
+		Room 0C: 00 -1 -1
+		Room 06: -1 16 -1
+		Room 00: -1 -1 01
+		Room 0A: -1 16 -1
 	Raise Progress:
 		181F HE_SCENARIO_1_OPEN
 		1836 HE_NO_AURON01_START
@@ -38,11 +45,6 @@
 	[END]
 
 1807 HE_START2A:
-	Remove Warp: World 06 Room 02
-	Remove Warp: World 06 Room 03
-	Add Warp: World 06 Room 04
-	Remove Warp: World 06 Room 0A
-	Remove Warp: World 06 Room 0C
 	World Map: 00 02
 	Spawn ID Change:
 		Room 03: 03 15 0B
@@ -62,7 +64,7 @@
 		Room 07: 00 00 00
 		Room 10: 00 00 00
 		Room 02: 00 00 12
-		Room 0A: 00 -1 -1
+		Room 0A: 00 00 00
 		Room 09: 00 00 00
 	Raise Progress:
 		1823 HE_SCENARIO_2_OPEN
@@ -72,11 +74,6 @@
 	[SKIP]
 
 1809 HE_START2B:
-	Remove Warp: World 06 Room 02
-	Remove Warp: World 06 Room 03
-	Add Warp: World 06 Room 04
-	Remove Warp: World 06 Room 0A
-	Remove Warp: World 06 Room 0C
 	World Map: 00 02
 	Spawn ID Change:
 		Room 03: 03 15 0C
@@ -96,7 +93,7 @@
 		Room 07: 00 00 00
 		Room 10: 00 00 00
 		Room 02: 00 00 12
-		Room 0A: 00 -1 -1
+		Room 0A: 00 00 00
 		Room 09: 00 00 00
 	Raise Progress:
 		1823 HE_SCENARIO_2_OPEN
@@ -210,30 +207,13 @@
 	[END]
 
 181D HE_INIT:
-	Remove Warp: World 06 Room 03
-	Remove Warp: World 06 Room 04
-	Remove Warp: World 06 Room 0A
-	Remove Warp: World 06 Room 0C
 	Spawn ID Change:
-		Room 03: 01 16 00
-		Room 0F: 00 00 00
-		Room 0B: 00 00 00
-		Room 04: 00 00 00
-		Room 11: 00 16 00
-		Room 0C: 00 16 00
-		Room 05: 00 00 00
-		Room 12: 00 00 00
-		Room 0D: 00 00 00
-		Room 06: 00 16 00
-		Room 00: 00 00 01
-		Room 0E: 00 00 00
-		Room 01: 00 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 10: 00 00 00
-		Room 02: 00 00 00
-		Room 0A: 00 16 00
-		Room 09: 00 00 00
+		Room 03: 01 16 -1
+		Room 11: -1 16 -1
+		Room 0C: 00 16 -1
+		Room 06: -1 16 -1
+		Room 00: -1 -1 01
+		Room 0A: -1 16 -1
 	[END]
 
 181E HE_129_END:
@@ -254,7 +234,7 @@
 1821 HE_132_END:
 	Spawn ID Change:
 		Room 06: -1 -1 00
-		Room 08: -1 -1 00
+		Room 08: -1 -1 03
 	[END]
 
 1822 HE_SCENARIO_1_END:
@@ -308,7 +288,6 @@
 
 182F HE_he18_ms108:
 	Unblock: World 06 Room 02
-	Add Warp: World 06 Room 04
 	Unblock: World 06 Room 0B
 	Unblock: World 06 Room 0C
 	World Map: 02 01
@@ -320,7 +299,7 @@
 		Room 06: -1 -1 16
 		Room 02: -1 -1 16
 	Raise Progress:
-		1822 HE_SCENARIO_1_END
+		1829 HE_W_COL_ON
 		183C HE_NO_AURON02_END
 	Raise Menu:
 		0A HE_TRAIN_MEMO_ON
@@ -420,7 +399,14 @@
 	[END]
 
 1844 HE_he_colosseum_4_CLEAR:
-	[SKIP]
+	Raise Progress:
+		1872 HE_HADES_ON
+	Raise Menu:
+		65 HE_URA_PAIN_PANIC_CUP
+		6A HE_URA_CERBERUS_CUP
+		67 HE_URA_TITANS_CUP
+		68 HE_URA_HADES_CUP
+	[END]
 
 1845 HE_105_END:
 	Spawn ID Change:
@@ -555,7 +541,7 @@
 		Room 06: -1 00 -1
 		Room 07: -1 03 -1
 		Room 10: -1 02 -1
-		Room 0A: -1 01 05
+		Room 0A: -1 00 05
 	[END]
 
 185C HE_131_END:
@@ -587,12 +573,9 @@
 	[END]
 
 1862 HE_137_END:
-	Add Warp: World 06 Room 08
 	Block: World 06 Room 04
 	Block: World 06 Room 0B
-	Add Warp: World 06 Room 00
 	Block: World 06 Room 0C
-	Add Warp: World 06 Room 01
 	Spawn ID Change:
 		Room 03: 02 -1 03
 		Room 0C: 03 -1 -1
@@ -709,7 +692,7 @@
 
 1875 HE_FM_COM_OBJ_OFF:
 	Spawn ID Change:
-		Room 0A: -1 00 -1
+		Room 0A: -1 02 05
 	[END]
 
 1876 HE_FM_KINOKO_ZEX_PLAYED:
@@ -722,6 +705,7 @@
 		Room 11: -1 02 -1
 		Room 0E: -1 -1 00
 		Room 02: -1 -1 13
+		Room 0A: -1 01 05
 	Raise Progress:
 		1826 HE_SCENARIO_2_END
 	[END]

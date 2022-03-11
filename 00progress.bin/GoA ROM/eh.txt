@@ -4,7 +4,6 @@
 		Room 0D: 01 -1 -1
 		Room 01: -1 -1 01
 	Raise Progress:
-		08ED TT_START_02
 		482F EH_SCENARIO_1_OPEN
 		4843 EH_NO_RIKU_START
 	[END]
@@ -19,11 +18,6 @@
 	[SKIP]
 
 4804 EH_INIT:
-	Remove Warp: World 12 Room 01
-	Remove Warp: World 12 Room 12
-	Remove Warp: World 12 Room 0D
-	Remove Warp: World 12 Room 09
-	Remove Warp: World 12 Room 04
 	Spawn ID Change:
 		Room 03: -1 01 -1
 		Room 04: 03 -1 -1
@@ -250,30 +244,28 @@
 	Spawn ID Change:
 		Room 11: -1 02 -1
 		Room 0C: -1 02 -1
-		Room 12: 04 -1 04
+		Room 12: 0D -1 04
 		Room 06: -1 02 -1
 		Room 10: -1 02 -1
 		Room 0A: -1 02 -1
+		Room 03: -1 03 -1
+	Raise Progress:
+		4837 EH_JIMMNY_FULL_OPEN
 	[END]
 
 4826 EH_eh_event_134:
-	Spawn ID Change:
-		Room 14: -1 -1 01
-		Room 12: 03 -1 00
-	[END]
+	[SKIP]
 
 4827 EH_eh_event_135:
 	Spawn ID Change:
-		Room 14: -1 -1 00
+		Room 1B: -1 -1 01
 	[END]
 
 4828:
 	[SKIP]
 
 4829 EH_eh_event_136:
-	Spawn ID Change:
-		Room 12: -1 -1 00
-	[END]
+	[SKIP]
 
 482A:
 	[SKIP]
@@ -344,9 +336,7 @@
 	[SKIP]
 
 483E EH_eh24_ms110:
-	Spawn ID Change:
-		Room 12: -1 -1 05
-	[END]
+	[SKIP]
 
 483F EH_eh22_ms111:
 	[SKIP]
@@ -392,9 +382,7 @@
 
 4849 EH_EH_LASTBOSS_RESET:
 	Spawn ID Change:
-		Room 14: -1 -1 00
-		Room 03: -1 03 -1
-		Room 12: 04 -1 04
+		Room 1B: -1 -1 00
 	Lower Progress:
 		4845 EH_RIKU_LAST_START
 		4841 EH_eh20_ms113
@@ -409,6 +397,8 @@
 		4827 EH_eh_event_135
 		4826 EH_eh_event_134
 		4849 EH_EH_LASTBOSS_RESET
+	Raise Progress:
+		4846 EH_EH_OUT
 	[END]
 
 484A EH_NO_RIKU_START_RE:

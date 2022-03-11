@@ -1,5 +1,7 @@
 1400 BB_START:
 	World Map: 00 01
+	Spawn ID Change:
+		Room 00: -1 -1 01
 	Raise Progress:
 		140C BB_SCENARIO_1_OPEN
 	[END]
@@ -58,27 +60,8 @@
 	[END]
 
 140B BB_INIT:
-	Remove Warp: World 05 Room 03
-	Remove Warp: World 05 Room 0A
-	Remove Warp: World 05 Room 01
-	Remove Warp: World 05 Room 02
 	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 0F: 00 00 00
-		Room 0B: 00 00 00
-		Room 04: 00 00 00
-		Room 0C: 00 00 00
-		Room 05: 00 00 00
-		Room 0D: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 01 00 01
-		Room 0E: 00 00 00
-		Room 01: 00 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 02: 00 00 00
-		Room 0A: 00 00 00
-		Room 09: 00 00 00
+		Room 00: 01 -1 01
 	[END]
 
 140C BB_SCENARIO_1_OPEN:
@@ -129,6 +112,7 @@
 		Room 0E: -1 -1 00
 		Room 01: -1 -1 15
 		Room 02: -1 -1 12
+		Room 04: 0D -1 -1
 	Raise Progress:
 		140F BB_SCENARIO_1_END
 		3C03 WM_BB1_CLEAR
@@ -141,10 +125,6 @@
 	[SKIP]
 
 1418 BB_START2:
-	Remove Warp: World 05 Room 03
-	Remove Warp: World 05 Room 0A
-	Remove Warp: World 05 Room 01
-	Remove Warp: World 05 Room 02
 	World Map: 00 02
 	Spawn ID Change:
 		Room 03: 00 00 00
@@ -208,7 +188,6 @@
 
 1421 BB_208_OUT:
 	Spawn ID Change:
-		Room 03: -1 01 -1
 		Room 09: -1 0A 00
 	[END]
 
@@ -221,9 +200,7 @@
 	[SKIP]
 
 1424 BB_FM_COM_OBJ_OFF:
-	Spawn ID Change:
-		Room 03: -1 00 -1
-	[END]
+	[SKIP]
 
 1425 BB_213_END:
 	Unblock: World 05 Room 0D

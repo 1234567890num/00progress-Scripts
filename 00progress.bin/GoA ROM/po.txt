@@ -1,7 +1,7 @@
 2400 PO_START:
 	World Map: 01 00
 	Spawn ID Change:
-		Room 00: 01 00 01
+		Room 00: 01 -1 01
 	Raise Progress:
 		2439 PO_SCENARIO_0_START
 	[END]
@@ -30,7 +30,7 @@
 
 2404 PO_HB_BATTLE_END:
 	Spawn ID Change:
-		Room 00: 02 00 02
+		Room 00: 12 -1 02
 	[END]
 
 2405 PO_005_END:
@@ -47,6 +47,7 @@
 2407 PO_008_END:
 	World Map: 02 00
 	Spawn ID Change:
+		Room 00: 02 -1 -1
 		Room 02: -1 -1 16
 	Raise Progress:
 		1039 HB_po_008_END
@@ -288,7 +289,6 @@
 		Room 02: -1 -1 0C
 		Room 09: -1 -1 0C
 	Raise Progress:
-		1084 HB_POOH_CLEAR
 		2449 PO_SCENARIO_5_END
 	[END]
 
@@ -307,7 +307,7 @@
 2432:
 	[SKIP]
 
-2433:
+2433 PO_SCENARIO_0_SKIP_GOA:
 	[SKIP]
 
 2434 PO_106_END:
@@ -355,18 +355,7 @@
 	[END]
 
 2438 PO_INIT:
-	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 04: 00 00 00
-		Room 05: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 00
-		Room 01: 00 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 02: 00 00 00
-		Room 09: 00 00 00
-	[END]
+	[SKIP]
 
 2439 PO_SCENARIO_0_START:
 	Raise Progress:
@@ -475,10 +464,14 @@
 
 2450 PO_402_END_L:
 	Unblock: World 09 Room 00
+	Lower Progress:
+		2451 PO_402_END_ON
 	[END]
 
 2451 PO_402_END_ON:
 	Block: World 09 Room 00
+	Lower Progress:
+		2450 PO_402_END_L
 	[END]
 
 2452 PO_FREE_ON:

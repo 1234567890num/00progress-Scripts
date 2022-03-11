@@ -1,5 +1,8 @@
 2800 LK_START:
 	World Map: 00 01
+	Spawn ID Change:
+		Room 01: 02 -1 -1
+		Room 10: -1 -1 01
 	Raise Progress:
 		282B LK_SCENARIO_1_OPEN
 	[END]
@@ -164,9 +167,6 @@
 	[SKIP]
 
 2818 LK_START2:
-	Remove Warp: World 0A Room 09
-	Remove Warp: World 0A Room 06
-	Remove Warp: World 0A Room 01
 	World Map: 00 02
 	Spawn ID Change:
 		Room 03: 00 00 00
@@ -306,27 +306,9 @@
 	[SKIP]
 
 282A LK_INIT:
-	Remove Warp: World 0A Room 09
-	Remove Warp: World 0A Room 06
-	Remove Warp: World 0A Room 01
 	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 0F: 00 00 00
-		Room 0B: 00 00 00
-		Room 04: 00 00 00
-		Room 0C: 00 00 00
-		Room 05: 00 00 00
-		Room 0D: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 00
-		Room 0E: 00 00 00
-		Room 01: 02 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 10: 00 00 01
-		Room 02: 00 00 00
-		Room 0A: 00 00 00
-		Room 09: 00 00 00
+		Room 01: 02 -1 -1
+		Room 10: -1 -1 01
 	[END]
 
 282B LK_SCENARIO_1_OPEN:
@@ -356,7 +338,7 @@
 
 2830 LK_SCENARIO_2_END:
 	Raise Progress:
-		2833 LK_lk15_ms202
+		2831 LK_214_END
 	[END]
 
 2831 LK_214_END:
@@ -371,6 +353,8 @@
 		Room 07: -1 0B -1
 		Room 02: -1 -1 15
 		Room 09: -1 -1 14
+	Raise Progress:
+		2830 LK_SCENARIO_2_END
 	[END]
 
 2832 LK_lk06_ms100:
@@ -380,7 +364,6 @@
 	World Map: 02 02
 	Spawn ID Change:
 		Room 00: -1 -1 0E
-	Raise Progress:
-		2830 LK_SCENARIO_2_END
+		Room 0D: 0D -1 -1
 	[END]
 

@@ -7,13 +7,7 @@
 3001 DC_START:
 	World Map: 00 01
 	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 04: 00 00 00
-		Room 05: 00 00 00
-		Room 06: 00 00 01
-		Room 00: 00 00 00
-		Room 01: 00 00 00
-		Room 02: 00 00 00
+		Room 06: -1 -1 01
 	Raise Progress:
 		300B DC_SCENARIO_1_OPEN
 	[END]
@@ -81,15 +75,17 @@
 	Spawn ID Change:
 		Room 04: 01 -1 01
 		Room 00: 01 01 -1
+		Room 06: -1 -1 14
+		Room 01: 00 00 -1
+		Room 02: 00 01 -1
+	Raise Progress:
+		300E DC_WI_CLEAR
 	[END]
 
 300A DC_108_END:
 	BGM Set: 3
 	Spawn ID Change:
 		Room 04: -1 -1 16
-		Room 06: -1 -1 14
-		Room 01: 00 00 -1
-		Room 02: 00 01 -1
 	Raise Progress:
 		102F HB_dc_108_END
 	[END]
@@ -121,25 +117,24 @@
 	Spawn ID Change:
 		Room 05: -1 -1 01
 		Room 00: 04 -1 -1
+		Room 04: -1 01 -1
 	[END]
 
 300F DC_111_END:
-	Add Warp: World 0C Room 04
 	Unblock: World 0C Room 05
 	BGM Set: 1
 	World Map: 02 01
 	Spawn ID Change:
 		Room 03: -1 00 -1
-		Room 05: -1 -1 00
+		Room 05: -1 02 00
 		Room 06: -1 -1 15
 		Room 00: -1 00 -1
 		Room 01: -1 -1 12
 		Room 02: -1 00 -1
 	Raise Progress:
-		2C00 LM_START
 		3012 DC_SCENARIO_1_END
 		3C06 WM_DC_CLEAR
-		4000 CA_START
+		3428 WI_START2
 	[END]
 
 3010 DC_SCENARIO_1_START:
@@ -158,18 +153,8 @@
 	[END]
 
 3013 DC_INIT:
-	Remove Warp: World 0C Room 04
-	Add Warp: World 0C Room 05
-	Remove Warp: World 0C Room 06
-	Remove Warp: World 0C Room 01
 	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 04: 00 00 00
-		Room 05: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 00
-		Room 01: 00 00 00
-		Room 02: 00 00 00
+		Room 04: 01 -1 01
 	[END]
 
 3014:
@@ -215,7 +200,9 @@
 	[END]
 
 3020 DC_FM_COM_OBJ_OFF_GOA:
-	[SKIP]
+	Lower Progress:
+		300E DC_WI_CLEAR
+	[END]
 
 3021 DC_FM_NAZO_BTL_READY:
 	Spawn ID Change:

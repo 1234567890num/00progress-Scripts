@@ -1,13 +1,14 @@
 3800 NM_START:
 	World Map: 00 01
+	Spawn ID Change:
+		Room 04: -1 -1 01
+	Lower Progress:
+		383A NM_SANTA_START
 	Raise Progress:
 		3838 NM_SCENARIO_1_OPEN
 	[END]
 
 3801 NM_START2:
-	Remove Warp: World 0E Room 08
-	Remove Warp: World 0E Room 05
-	Remove Warp: World 0E Room 01
 	World Map: 00 02
 	Spawn ID Change:
 		Room 03: 00 00 00
@@ -18,11 +19,12 @@
 		Room 01: 00 00 0A
 		Room 08: 02 00 00
 		Room 07: 00 00 00
-		Room 02: -1 00 00
+		Room 02: 04 00 00
 		Room 0A: 00 00 00
 		Room 09: 00 00 00
 	Raise Progress:
 		3835 NM_SCENARIO_2_OPEN
+		383A NM_SANTA_START
 	[END]
 
 3802 NM_102_END:
@@ -207,7 +209,6 @@
 		Room 02: 04 -1 -1
 		Room 09: 02 -1 16
 	Raise Progress:
-		2800 LK_START
 		3834 NM_SCENARIO_1_END
 		383A NM_SANTA_START
 		3C08 WM_NM1_CLEAR
@@ -350,7 +351,7 @@
 3831 NM_217_END:
 	World Map: 02 02
 	Spawn ID Change:
-		Room 05: -1 -1 12
+		Room 05: -1 01 12
 		Room 06: 00 -1 -1
 		Room 00: -1 -1 00
 		Room 01: -1 -1 13
@@ -369,21 +370,9 @@
 	[END]
 
 3833 NM_INIT:
-	Remove Warp: World 0E Room 08
-	Remove Warp: World 0E Room 05
-	Remove Warp: World 0E Room 01
 	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 04: 00 00 01
-		Room 05: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 01 00 00
-		Room 01: 00 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 02: 00 00 00
-		Room 0A: 00 00 00
-		Room 09: 00 00 00
+		Room 04: -1 -1 01
+		Room 00: 01 -1 -1
 	[END]
 
 3834 NM_SCENARIO_1_END:
@@ -420,7 +409,9 @@
 	[SKIP]
 
 383B NM_FM_COM_OBJ_OFF_GOA:
-	[SKIP]
+	Spawn ID Change:
+		Room 05: -1 02 -1
+	[END]
 
 383C NM_112_OUT:
 	Spawn ID Change:

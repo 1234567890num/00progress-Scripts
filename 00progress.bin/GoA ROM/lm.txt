@@ -1,7 +1,7 @@
 2C00 LM_START:
 	World Map: 00 01
 	Spawn ID Change:
-		Room 07: 00 00 01
+		Room 07: -1 -1 01
 	Raise Progress:
 		2C30 LM_SCENARIO_1_OPEN
 	[END]
@@ -340,19 +340,7 @@
 	[END]
 
 2C2E LM_INIT:
-	Remove Warp: World 0B Room 02
-	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 04: 00 00 00
-		Room 05: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 00
-		Room 01: 00 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 02: 00 00 00
-		Room 09: 00 00 00
-	[END]
+	[SKIP]
 
 2C2F LM_SCENARIO_1_START:
 	Raise Progress:

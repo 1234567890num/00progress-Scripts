@@ -1,7 +1,12 @@
 4400 TR_START:
 	World Map: 00 01
+	Spawn ID Change:
+		Room 00: 00 -1 -1
+		Room 01: 02 -1 01
 	Raise Progress:
 		442E TR_SCENARIO_1_OPEN
+	Lower Menu:
+		08 TR_LIGHTCYCLE_ON
 	[END]
 
 4401 TR_101_END:
@@ -50,7 +55,7 @@
 		Room 00: -1 -1 15
 		Room 01: -1 -1 00
 	Raise Progress:
-		1013 HB_tr_107_END
+		4424 TR_hb_304_END
 	Raise Menu:
 		25 TR_VISIT_TR00
 	[END]
@@ -103,8 +108,6 @@
 		Room 03: 01 01 00
 		Room 04: -1 -1 01
 		Room 05: 02 -1 16
-	Raise Progress:
-		1097 HB_RTN_ON_OFF
 	Raise Menu:
 		26 TR_VISIT_TR05
 	[END]
@@ -134,7 +137,6 @@
 		Room 00: -1 -1 0D
 		Room 01: 05 -1 -1
 	Raise Progress:
-		1018 HB_tr_117_END
 		4430 TR_SCENARIO_1_END
 	Raise Menu:
 		08 TR_LIGHTCYCLE_ON
@@ -179,7 +181,7 @@
 		Room 00: -1 -1 0B
 		Room 01: -1 0A -1
 	Raise Progress:
-		104D HB_TR_202_END
+		4428 TR_hb_501_END
 	Raise Menu:
 		44 TR_LIGHTCYCLE2_ON
 		08 TR_LIGHTCYCLE_ON
@@ -202,7 +204,7 @@
 		Room 00: 02 -1 14
 		Room 01: -1 -1 0B
 	Raise Progress:
-		108A HB_hb_event_502
+		4429 TR_hb_502_END
 	Raise Menu:
 		45 TR_LIGHTCYCLE2_OFF
 	[END]
@@ -215,7 +217,7 @@
 
 441B TR_tr04_ms202:
 	Raise Progress:
-		1051 HB_TR_tr04_ms202
+		442A TR_503_END
 	[END]
 
 441C TR_206_END:
@@ -224,8 +226,6 @@
 		Room 05: 03 -1 15
 		Room 06: 00 0B -1
 		Room 0A: -1 -1 0A
-	Raise Progress:
-		108F HB_TR05_HIDDEN_ON
 	Raise Menu:
 		26 TR_VISIT_TR05
 	[END]
@@ -235,8 +235,6 @@
 		Room 05: 00 -1 12
 		Room 07: -1 -1 0A
 		Room 0A: -1 -1 16
-	Raise Progress:
-		1090 HB_TR05_HIDDEN_OFF
 	[END]
 
 441E TR_208_END:
@@ -253,8 +251,6 @@
 	Spawn ID Change:
 		Room 08: -1 -1 16
 		Room 09: -1 -1 0A
-	Raise Progress:
-		1091 HB_TR08_HIDDEN_ON
 	Raise Menu:
 		27 TR_VISIT_TR08
 	[END]
@@ -262,8 +258,6 @@
 4421 TR_210_END:
 	Spawn ID Change:
 		Room 09: -1 -1 00
-	Raise Progress:
-		1092 HB_TR08_HIDDEN_OFF
 	[END]
 
 4422 TR_tr09_ms204:
@@ -273,11 +267,10 @@
 	World Map: 02 02
 	Spawn ID Change:
 		Room 06: 02 -1 -1
-		Room 08: 01 -1 00
+		Room 08: 01 01 00
 		Room 07: 02 -1 -1
 		Room 0A: 01 -1 15
 	Raise Progress:
-		1053 HB_TR_tr09_ms205
 		4433 TR_SCENARIO_2_END
 	[END]
 
@@ -322,18 +315,9 @@
 
 442D TR_INIT:
 	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 0B: 00 00 00
-		Room 04: 00 00 00
-		Room 05: 00 00 00
-		Room 06: 01 00 00
-		Room 00: 00 00 00
-		Room 01: 02 00 01
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 02: 00 00 00
-		Room 0A: 00 00 00
-		Room 09: 00 00 00
+		Room 06: 01 -1 -1
+		Room 00: 00 -1 -1
+		Room 01: 02 -1 01
 	[END]
 
 442E TR_SCENARIO_1_OPEN:
@@ -377,9 +361,7 @@
 	[SKIP]
 
 4436 TR_RTN_ON:
-	Raise Progress:
-		108C HB_RTN_ON
-	[END]
+	[SKIP]
 
 4437 TR_113_OUT:
 	Block: World 11 Room 04
@@ -394,7 +376,9 @@
 	[END]
 
 4439 TR_FM_COM_OBJ_OFF_GOA:
-	[SKIP]
+	Spawn ID Change:
+		Room 08: -1 02 -1
+	[END]
 
 443A TR_HB05_HIDDEN_OFF:
 	Spawn ID Change:

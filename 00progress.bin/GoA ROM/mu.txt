@@ -1,7 +1,11 @@
 2000 MU_START:
 	World Map: 00 01
 	Spawn ID Change:
-		Room 00: 01 00 01
+		Room 00: -1 -1 01
+		Room 01: -1 00 -1
+		Room 06: 00 -1 -1
+	Lower Progress:
+		2018 MU_MULAN_START
 	Raise Progress:
 		200A MU_SCENARIO_1_OPEN
 	[END]
@@ -35,24 +39,10 @@
 	[SKIP]
 
 2008 MU_INIT:
-	Remove Warp: World 08 Room 04
-	Remove Warp: World 08 Room 0B
-	Remove Warp: World 08 Room 00
-	Remove Warp: World 08 Room 0C
 	Spawn ID Change:
-		Room 03: 00 00 00
-		Room 0B: 00 00 00
-		Room 04: 00 00 00
-		Room 0C: 00 00 00
-		Room 05: 00 00 00
-		Room 06: 00 00 00
-		Room 00: 00 00 00
-		Room 01: 00 00 00
-		Room 08: 00 00 00
-		Room 07: 00 00 00
-		Room 02: 00 00 00
-		Room 0A: 00 00 00
-		Room 09: 00 00 00
+		Room 06: 00 -1 -1
+		Room 00: 01 -1 01
+		Room 01: -1 -1 00
 	[END]
 
 2009 MU_SCENARIO_1_START:
@@ -117,11 +107,7 @@
 	[END]
 
 2013 MU_START2:
-	Add Warp: World 08 Room 04
 	Block: World 08 Room 0A
-	Remove Warp: World 08 Room 0B
-	Remove Warp: World 08 Room 00
-	Remove Warp: World 08 Room 0C
 	World Map: 00 02
 	Spawn ID Change:
 		Room 03: 02 0A 00
@@ -139,6 +125,7 @@
 		Room 09: 00 0A 00
 	Raise Progress:
 		200D MU_SCENARIO_2_OPEN
+		2018 MU_MULAN_START
 	[END]
 
 2014:
@@ -223,7 +210,6 @@
 
 2023 MU_216_END:
 	Unblock: World 08 Room 04
-	Add Warp: World 08 Room 0C
 	World Map: 02 02
 	Spawn ID Change:
 		Room 03: 00 -1 -1
@@ -237,13 +223,13 @@
 		Room 02: 00 -1 -1
 		Room 0A: -1 0A -1
 		Room 09: -1 01 -1
+		Room 07: 0D -1 -1
 	Raise Progress:
 		200F MU_SCENARIO_2_END
 		3C0C WM_MU2_CLEAR
 	[END]
 
 2024 MU_101_END:
-	Add Warp: World 08 Room 0C
 	Block: World 08 Room 01
 	World Map: 01 01
 	Spawn ID Change:
@@ -355,7 +341,6 @@
 	[END]
 
 2038 MU_110_END_L:
-	Add Warp: World 08 Room 04
 	Unblock: World 08 Room 0C
 	Spawn ID Change:
 		Room 03: 02 -1 -1
