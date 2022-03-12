@@ -1176,6 +1176,8 @@
 08AF TT_SCENARIO_9_OPEN:
 	Raise Progress:
 		08EC TT_START_01
+	Lower Progress:
+		08EC TT_START_01
 	[END]
 
 08B0 TT_902_END_L:
@@ -1269,6 +1271,8 @@
 
 08BB TT_SCENARIO_10_OPEN:
 	Raise Progress:
+		08ED TT_START_02
+	Lower Progress:
 		08ED TT_START_02
 	[END]
 
