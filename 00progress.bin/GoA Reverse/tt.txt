@@ -20,74 +20,74 @@
 		4804 EH_INIT
 	[END]
 
-0801 TT_XEM_PATH_GOA:
-	Spawn ID Change:
-		Room 21: 01 02 -1
-	Lower Progress:
-		0801 TT_XEM_PATH_GOA
-	[END]
-
-0802 TT_XIG_PATH_GOA:
-	Spawn ID Change:
-		Room 21: 01 03 -1
-	Lower Progress:
-		0802 TT_XIG_PATH_GOA
-	[END]
-
-0803 TT_XAL_PATH_GOA:
-	Spawn ID Change:
-		Room 21: 01 04 -1
-	Lower Progress:
-		0803 TT_XAL_PATH_GOA
-	[END]
-
-0804 TT_SAI_PATH_GOA:
-	Spawn ID Change:
-		Room 21: 01 05 -1
-	Lower Progress:
-		0804 TT_SAI_PATH_GOA
-	[END]
-
-0805 TT_AXE_PATH_GOA:
-	Spawn ID Change:
-		Room 21: 01 06 -1
-	Lower Progress:
-		0805 TT_AXE_PATH_GOA
-	[END]
-
-0806 TT_DEM_PATH_GOA:
-	Spawn ID Change:
-		Room 21: 01 07 -1
-	Lower Progress:
-		0806 TT_DEM_PATH_GOA
-	[END]
-
-0807 TT_LUX_PATH_GOA:
-	Spawn ID Change:
-		Room 21: 01 08 -1
-	Lower Progress:
-		0807 TT_LUX_PATH_GOA
-	[END]
-
-0808 TT_ROX_PATH_GOA:
-	Spawn ID Change:
-		Room 21: 00 09 -1
-	Lower Progress:
-		0808 TT_ROX_PATH_GOA
-	[END]
-
-0809 TT_PROMISE_PATH_GOA:
-	Spawn ID Change:
-		Room 21: 02 0A -1
-	Lower Progress:
-		0809 TT_PROMISE_PATH_GOA
-	[END]
-
-080A TT_THORN_PATH_GOA:
+0801 TT_THORN_PATH_GOA:
 	Spawn ID Change:
 		Room 21: 00 01 -1
 	Lower Progress:
-		080A TT_THORN_PATH_GOA
+		0801 TT_THORN_PATH_GOA
+	[END]
+
+0802 TT_XEM_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 01 02 -1
+	Lower Progress:
+		0802 TT_XEM_PATH_GOA
+	[END]
+
+0803 TT_XIG_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 01 03 -1
+	Lower Progress:
+		0803 TT_XIG_PATH_GOA
+	[END]
+
+0804 TT_XAL_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 01 04 -1
+	Lower Progress:
+		0804 TT_XAL_PATH_GOA
+	[END]
+
+0805 TT_SAI_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 01 05 -1
+	Lower Progress:
+		0805 TT_SAI_PATH_GOA
+	[END]
+
+0806 TT_AXE_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 01 06 -1
+	Lower Progress:
+		0806 TT_AXE_PATH_GOA
+	[END]
+
+0807 TT_DEM_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 01 07 -1
+	Lower Progress:
+		0807 TT_DEM_PATH_GOA
+	[END]
+
+0808 TT_LUX_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 01 08 -1
+	Lower Progress:
+		0808 TT_LUX_PATH_GOA
+	[END]
+
+0809 TT_ROX_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 00 09 -1
+	Lower Progress:
+		0809 TT_ROX_PATH_GOA
+	[END]
+
+080A TT_PROMISE_PATH_GOA:
+	Spawn ID Change:
+		Room 21: 02 0A -1
+	Lower Progress:
+		080A TT_PROMISE_PATH_GOA
 	[END]
 
 080B:
