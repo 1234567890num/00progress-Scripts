@@ -684,6 +684,8 @@
 		Room 0B: 01 -1 0C
 		Room 0A: 01 16 0C
 		Room 09: 02 -1 00
+	Raise Progress:
+		08E8 TT_MISTERY_SKIP_GOA
 	[END]
 
 086E TT_MISTERY_A_END:
@@ -951,6 +953,9 @@
 0894 TT_SCENARIO_7_OPEN:
 	Raise Progress:
 		0893 TT_701_END_L
+		0895 TT_702_END_L
+	Lower Progress:
+		0895 TT_702_END_L
 	[END]
 
 0895 TT_702_END_L:

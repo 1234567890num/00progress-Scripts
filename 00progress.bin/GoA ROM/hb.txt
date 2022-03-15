@@ -310,6 +310,7 @@
 		Room 09: 00 00 00
 	Raise Progress:
 		1062 HB_SCENARIO_5_OPEN
+		1085 HB_SCENARIO_5_SKIP
 	[END]
 
 102D HB_START_wi_dc:
@@ -546,23 +547,14 @@
 		Room 09: -1 -1 00
 	[END]
 
-1057 HB_MEMBERSHIP_422_GOA:
-	Unblock: World 04 Room 0C
-	Spawn ID Change:
-		Room 05: 11 -1 -1
-	[END]
+1057:
+	[SKIP]
 
-1058 HB_MEMBERSHIP_403_GOA:
-	Unblock: World 04 Room 0C
-	Spawn ID Change:
-		Room 05: 10 -1 -1
-	[END]
+1058:
+	[SKIP]
 
-1059 HB_MEMBERSHIP_416_GOA:
-	Unblock: World 04 Room 0C
-	Spawn ID Change:
-		Room 05: 0E -1 -1
-	[END]
+1059:
+	[SKIP]
 
 105A HB_hb17_ms405:
 	Spawn ID Change:
@@ -803,8 +795,28 @@
 		Room 0D: 04 -1 -1
 	[END]
 
-1085:
-	[SKIP]
+1085 HB_SCENARIO_5_SKIP:
+	Raise Progress:
+		104C HB_508_END
+		1064 HB_509_END
+		1065 HB_hb09_ms501
+		1066 HB_511_END
+		1095 HB_hb_event_512
+		1068 HB_513_END
+		1069 HB_514_END
+		1096 HB_hb_event_515
+		106B HB_516_END
+		106C HB_517_END
+		106D HB_518_END
+		106E HB_519_END
+		104E HB_501_END
+		108A HB_hb_event_502
+		1052 HB_503_END
+		1054 HB_504_END
+		1055 HB_505_END
+		1056 HB_506_END
+		108B HB_hb_event_507
+	[END]
 
 1086 HB_hb20_ms401:
 	Spawn ID Change:
@@ -1080,6 +1092,7 @@
 		4000 CA_START
 		4400 TR_START
 		4800 EH_START
+		2433 PO_SCENARIO_0_SKIP_GOA
 	[END]
 
 10BD HB_ROXAS_KINOKO_CLEAR:

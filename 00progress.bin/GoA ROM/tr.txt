@@ -45,6 +45,8 @@
 	Spawn ID Change:
 		Room 00: 02 -1 04
 		Room 01: 01 -1 00
+	Raise Progress:
+		4408 TR_LIGHTCYCLE_SKIP_GOA
 	Lower Progress:
 		4434 TR_tr01_ms101_EXIT
 	[END]
