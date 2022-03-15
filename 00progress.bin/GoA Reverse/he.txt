@@ -269,6 +269,8 @@
 1829 HE_W_COL_ON:
 	Spawn ID Change:
 		Room 03: 03 -1 0A
+	Raise Menu:
+		63 HE_TITANS_CUP
 	[END]
 
 182A:

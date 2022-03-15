@@ -150,6 +150,8 @@
 3012 DC_SCENARIO_1_END:
 	Raise Progress:
 		300F DC_111_END
+	Raise Menu:
+		61 HE_PAIN_PANIC_CUP
 	[END]
 
 3013 DC_INIT:

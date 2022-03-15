@@ -256,6 +256,8 @@
 1826 HE_SCENARIO_2_END:
 	Raise Progress:
 		1877 HE_217_END
+	Raise Menu:
+		63 HE_TITANS_CUP
 	[END]
 
 1827 HE_138_END:

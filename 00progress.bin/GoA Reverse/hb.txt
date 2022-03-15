@@ -432,6 +432,7 @@
 1040 HB_hb04_ms403:
 	Spawn ID Change:
 		Room 04: -1 -1 02
+		Room 06: -1 -1 13
 	Raise Progress:
 		1083 HB_NEW_MICKEY_START
 	[END]
@@ -546,16 +547,23 @@
 		Room 09: -1 -1 00
 	[END]
 
-1057:
-	Raise Progress:
-		3C0B WM_HB2_CLEAR
+1057 HB_MEMBERSHIP_422_GOA:
+	Unblock: World 04 Room 0C
+	Spawn ID Change:
+		Room 05: 11 -1 -1
 	[END]
 
-1058:
-	[SKIP]
+1058 HB_MEMBERSHIP_403_GOA:
+	Unblock: World 04 Room 0C
+	Spawn ID Change:
+		Room 05: 10 -1 -1
+	[END]
 
-1059:
-	[SKIP]
+1059 HB_MEMBERSHIP_416_GOA:
+	Unblock: World 04 Room 0C
+	Spawn ID Change:
+		Room 05: 0E -1 -1
+	[END]
 
 105A HB_hb17_ms405:
 	Spawn ID Change:
