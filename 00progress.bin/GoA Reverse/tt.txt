@@ -724,7 +724,6 @@
 	[END]
 
 0872 TT_506_END_L:
-	Block: World 02 Room 09
 	Spawn ID Change:
 		Room 24: 03 -1 00
 		Room 0C: 03 -1 01
@@ -1161,8 +1160,6 @@
 	Spawn ID Change:
 		Room 1C: 01 -1 -1
 		Room 0E: 04 -1 -1
-		Room 15: 07 -1 00
-		Room 13: 02 00 -1
 	Raise Progress:
 		08AD TT_SCENARIO_8_END
 	[END]

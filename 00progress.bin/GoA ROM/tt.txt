@@ -722,7 +722,6 @@
 	[END]
 
 0872 TT_506_END_L:
-	Block: World 02 Room 09
 	Spawn ID Change:
 		Room 24: 03 -1 00
 		Room 0C: 03 -1 01
