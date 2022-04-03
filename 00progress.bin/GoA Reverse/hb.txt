@@ -402,7 +402,7 @@
 	Unblock: World 04 Room 09
 	World Map: 02 02
 	Spawn ID Change:
-		Room 0D: 00 -1 09
+		Room 0D: -1 -1 09
 	Raise Progress:
 		1061 HB_SCENARIO_2_END
 	[END]
