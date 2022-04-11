@@ -202,6 +202,8 @@
 	[END]
 
 3020 DC_FM_COM_OBJ_OFF_GOA:
+	Spawn ID Change:
+		Room 04: -1 00 -1
 	Lower Progress:
 		300E DC_WI_CLEAR
 	[END]

@@ -457,7 +457,7 @@
 
 1C50 AL_FM_COM_OBJ_OFF:
 	Spawn ID Change:
-		Room 0F: -1 02 15
+		Room 0F: -1 00 15
 	[END]
 
 1C51 AL_FM_KINOKO_LEX_PLAYED:

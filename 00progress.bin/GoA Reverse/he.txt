@@ -695,7 +695,7 @@
 
 1875 HE_FM_COM_OBJ_OFF:
 	Spawn ID Change:
-		Room 0A: -1 02 05
+		Room 0A: -1 00 05
 	[END]
 
 1876 HE_FM_KINOKO_ZEX_PLAYED:
