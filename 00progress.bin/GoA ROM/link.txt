@@ -117,11 +117,12 @@ Type 3 64 HE_HADES_CUP: (4)
 	Type 1 1841 HE_he_colosseum_3_CLEAR
 	Type 1 4825 EH_eh_event_133
 
-Type 1 1872 HE_HADES_ON: (2)
-	Type 1 1844 HE_he_colosseum_4_CLEAR
+Type 1 4801 EH_VISIT_LOCK_1_GOA: (1)
+	Type 1 0029 ZZ_EH_CHECK_1_GOA
 
-Type 3 65 HE_URA_PAIN_PANIC_CUP: (2)
-	Type 1 1844 HE_he_colosseum_4_CLEAR
+Type 1 4802 EH_VISIT_LOCK_2_GOA: (2)
+	Type 1 481B EH_eh_event_123
+	Type 1 002A ZZ_EH_CHECK_2_GOA
 
 Type 2 00 START: (0)
 	Type 1 0815 TT_SCENARIO_1_OPEN

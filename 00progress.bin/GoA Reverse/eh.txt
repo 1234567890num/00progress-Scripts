@@ -8,11 +8,15 @@
 		4843 EH_NO_RIKU_START
 	[END]
 
-4801:
-	[SKIP]
+4801 EH_VISIT_LOCK_1_GOA:
+	Spawn ID Change:
+		Room 02: 00 -1 -1
+	[END]
 
-4802:
-	[SKIP]
+4802 EH_VISIT_LOCK_2_GOA:
+	Spawn ID Change:
+		Room 0D: 00 -1 -1
+	[END]
 
 4803:
 	[SKIP]
@@ -23,7 +27,7 @@
 		Room 04: 03 -1 -1
 		Room 08: -1 01 -1
 		Room 07: -1 01 -1
-		Room 02: -1 01 -1
+		Room 02: 03 01 -1
 	[END]
 
 4805 EH_eh_event_101:
@@ -177,7 +181,7 @@
 481B EH_eh_event_123:
 	Spawn ID Change:
 		Room 0F: 00 01 00
-		Room 0D: 00 -1 14
+		Room 0D: 04 -1 14
 		Room 10: -1 -1 03
 	[END]
 
@@ -244,7 +248,7 @@
 	Spawn ID Change:
 		Room 11: -1 02 -1
 		Room 0C: -1 02 -1
-		Room 12: 0D -1 04
+		Room 12: 04 -1 04
 		Room 06: -1 02 -1
 		Room 10: -1 02 -1
 		Room 0A: -1 02 -1
