@@ -86,8 +86,6 @@
 	BGM Set: 3
 	Spawn ID Change:
 		Room 04: -1 -1 16
-	Raise Progress:
-		102F HB_dc_108_END
 	[END]
 
 300B DC_SCENARIO_1_OPEN:
@@ -159,8 +157,10 @@
 		Room 04: 01 -1 01
 	[END]
 
-3014:
-	[SKIP]
+3014 DC_VISIT_LOCK_GOA:
+	Spawn ID Change:
+		Room 04: -1 -1 04
+	[END]
 
 3015:
 	[SKIP]

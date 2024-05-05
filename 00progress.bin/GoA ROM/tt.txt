@@ -857,7 +857,7 @@
 0887 TT_609_END:
 	BGM Set: 3
 	Spawn ID Change:
-		Room 11: 03 01 16
+		Room 11: 03 01 00
 		Room 15: 01 -1 01
 	[END]
 
