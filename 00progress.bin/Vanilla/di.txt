@@ -1,0 +1,10 @@
+0C00 DI_START:
+	Spawn ID Change:
+		Room 00: -1 -1 01
+	[END]
+
+0C01 DI_555_END:
+	Spawn ID Change:
+		Room 00: -1 -1 00
+	[END]
+
